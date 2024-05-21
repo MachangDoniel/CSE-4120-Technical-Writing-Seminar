@@ -393,6 +393,124 @@ As with unordered lists, each entry must be preceded by the \item command which,
 
 For further information you can open this  larger Overleaf project which demonstrates various types of LaTeX list or visit our dedicated help article on LaTeX lists, which provides many more examples and shows how to create customized lists.
 
+## Adding math to LaTeX
+One of the main advantages of LaTeX is the ease with which mathematical expressions can be written. LaTeX provides two writing modes for typesetting mathematics:
+
+* inline math mode used for writing formulas that are part of a paragraph
+* display math mode used to write expressions that are not part of a text or paragraph and are typeset on separate lines
+
+### Inline math mode
+Let’s see an example of inline math mode:
+```bash
+\documentclass[12pt, letterpaper]{article}
+\begin{document}
+In physics, the mass-energy equivalence is stated 
+by the equation $E=mc^2$, discovered in 1905 by Albert Einstein.
+\end{document}
+```
+To typeset inline-mode math you can use one of these delimiter pairs: \( ... \), $ ... $ or \begin{math} ... \end{math}, as demonstrated in the following example:
+```bash
+\documentclass[12pt, letterpaper]{article}
+\begin{document}
+\begin{math}
+E=mc^2
+\end{math} is typeset in a paragraph using inline math mode---as is $E=mc^2$, and so too is \(E=mc^2\).
+\end{document}
+```
+### Display math mode
+Equations typeset in display mode can be numbered or unnumbered, as in the following example:
+```bash
+\documentclass[12pt, letterpaper]{article}
+\begin{document}
+The mass-energy equivalence is described by the famous equation
+\[ E=mc^2 \] discovered in 1905 by Albert Einstein. 
+
+In natural units ($c = 1$), the formula expresses the identity
+\begin{equation}
+E=m
+\end{equation}
+\end{document}
+```
+To typeset display-mode math you can use one of these delimiter pairs: <font color='green'>\[ ... \]</font>, <font color='green'>\begin{displaymath}</font> ... <font color='green'>\end{displaymath}</font> or <font color='green'>\begin{equation}</font> ... <font color='green'>\end{equation}</font>. Historically, typesetting display-mode math required use of "double dollar sign" characters delimiters, as in "double dollar sign" ... display math here ...$$, but this method is no longer recommended: use LaTeX’s delimiters <font color='green'>\[ ... \]</font> instead. 
+
+### More complete examples
+
+The following examples demonstrate a range of mathematical content typeset using LaTeX.
+```bash
+\documentclass{article}
+\begin{document}
+Subscripts in math mode are written as $a_b$ and superscripts are written as $a^b$. These can be combined and nested to write expressions such as
+
+\[ T^{i_1 i_2 \dots i_p}_{j_1 j_2 \dots j_q} = T(x^{i_1},\dots,x^{i_p},e_{j_1},\dots,e_{j_q}) \]
+ 
+We write integrals using $\int$ and fractions using $\frac{a}{b}$. Limits are placed on integrals using superscripts and subscripts:
+
+\[ \int_0^1 \frac{dx}{e^x} =  \frac{e-1}{e} \]
+
+Lower case Greek letters are written as $\omega$ $\delta$ etc. while upper case Greek letters are written as $\Omega$ $\Delta$.
+
+Mathematical operators are prefixed with a backslash as $\sin(\beta)$, $\cos(\alpha)$, $\log(x)$ etc.
+\end{document}
+```
+The next example uses the equation* environment which is provided by the amsmath package, so we need to add the following line to our document preamble:
+
+\usepackage{amsmath}% For the equation* environment
+
+For further information on using amsmath see our help article.
+```bash
+\documentclass{article}
+\usepackage{amsmath}% For the equation* environment
+\begin{document}
+\section{First example}
+
+The well-known Pythagorean theorem \(x^2 + y^2 = z^2\) was proved to be invalid for other exponents, meaning the next equation has no integer solutions for \(n>2\):
+
+\[ x^n + y^n = z^n \]
+
+\section{Second example}
+
+This is a simple math expression \(\sqrt{x^2+1}\) inside text. 
+And this is also the same: 
+\begin{math}
+\sqrt{x^2+1}
+\end{math}
+but by using another command.
+
+This is a simple math expression without numbering
+\[\sqrt{x^2+1}\] 
+separated from text.
+
+This is also the same:
+\begin{displaymath}
+\sqrt{x^2+1}
+\end{displaymath}
+
+\ldots and this:
+\begin{equation*}
+\sqrt{x^2+1}
+\end{equation*}
+\end{document}
+```
+The possibilities with math in LaTeX are endless so be sure to visit Overleaf's help pages for advice and examples on specific topics:
+
+* Mathematical expressions
+* Subscripts and superscripts
+* Brackets and Parentheses
+* Fractions and Binomials
+* Aligning Equations
+* Operators
+* Spacing in math mode
+* Integrals, sums and limits
+* Display style in math mode
+* List of Greek letters and math symbols
+* Mathematical fonts
+
+
+
+
+
+
+
 
 
 ## Souce
