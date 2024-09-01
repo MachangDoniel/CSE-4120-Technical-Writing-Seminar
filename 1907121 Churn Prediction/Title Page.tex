@@ -1,0 +1,156 @@
+\begin{titlepage}
+    % \textbf{Project/Thesis No: CSER-24-35}
+    \begin{center}
+    \pagenumbering{roman} % Set page numbering to Arabic numerals
+    \setcounter{page}{0} % Start from page 2
+    {\fontsize{14}{1.5}\selectfont \textbf{CSE 4120: Technical Writing and Seminar}}\\
+    \vspace{12pt}
+    {\fontsize{18}{1.5}\selectfont \textbf{Churn Prediction}}\\
+    % \textsc{\Large Efficient Dominating Query Processing with CUDA C: \\A Parallel Approach }\\[0.8cm]
+
+    \vspace{12pt}
+    \vspace{12pt}
+    {\fontsize{14}{1.5}\selectfont By}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    {\fontsize{14}{1.5}\selectfont \textbf{Doniel Tripura}}\\
+    \vspace{12pt}
+    {\fontsize{14}{1.5}\selectfont Roll: 1907121}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \begin{figure}[htp!]
+        \centering
+        \includegraphics[height=1.2in, width=1in]{img/Logo_KUET.png}
+    \end{figure}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    % \vspace{12pt}
+    % \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont \textbf{Department of Computer Science and Engineering}}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont \textbf{Khulna University of Engineering \& Technology}}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont \textbf{Khulna 9203, Bangladesh}}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont \textbf{June, 2024}}\\
+
+    \vspace{12pt}
+    
+    {\fontsize{18}{1.5}\selectfont \textbf{Churn Prediction}}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont By}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont \textbf{Doniel Tripura}}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont Roll: 1907121}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    
+    % \vspace{12pt}
+    % \vspace{12pt}
+    % \vspace{12pt}
+    \begin{flushleft}
+    {\fontsize{12}{1.5}\selectfont \textbf{Submitted To:}}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont \textbf{Dr. K. M. Azharul Hasan}}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont Professor}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont Department of Computer Science and Engineering \hspace{.65in}\tikz{\draw (0,0) -- (3,0);}}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont Khulna University of Engineering \& Technology \hspace{1in} Signature}\\
+     \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont \textbf{Sunanda Das}}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont Assistant Professor}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont Department of Computer Science and Engineering \hspace{.65in}\tikz{\draw (0,0) -- (3,0);}}\\
+    \hspace*{0.8in} % Adjust the horizontal position
+    {\fontsize{12}{1.5}\selectfont Khulna University of Engineering \& Technology \hspace{1in} Signature}\\
+    \end{flushleft}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    \vspace{12pt}
+    % \vspace{12pt}
+    % \vspace{12pt}
+    % \vspace{12pt}
+
+    {\fontsize{12}{1.5}\selectfont Department of Computer Science and Engineering}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont Khulna University of Engineering \& Technology}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont Khulna 9203, Bangladesh}\\
+    \vspace{12pt}
+    {\fontsize{12}{1.5}\selectfont June, 2024}\\
+    \clearpage
+
+    {\fontsize{16}{1.5}\selectfont \textbf{Acknowledgement}}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    \begin{flushleft}
+        \justifying 
+        I would like to express my sincere gratitude to my course teachers, Dr. K. M. Azharul Hasan \& Sunanda Das for their continuous support and guidance throughout this research. I also want extend my gratitude to the authors of the research papers analyzed in this study for their contributions to the field of customer churn prediction.
+    \end{flushleft}
+    {\fontsize{12}{1.5}\selectfont \hfill \textbf{Author}}
+    \clearpage
+    {\fontsize{16}{1.5}\selectfont \textbf{Abstract}}\\
+    \vspace{12pt}
+    \vspace{12pt}
+    \begin{flushleft}
+        \justifying It is important for businesses, especially in the telecom industry, to predict customer churn, as keeping current customers is more cost-effective than acquiring new ones. This report studies and compares three research papers that focused on neural network-based models for customer churn prediction. The first paper looks at individual neural networks and ensemble methods like Bagging, AdaBoost, and Majority Voting, showing that ensemble techniques result in improved accuracy and robustness. The second paper explores a hybrid model that combines Artificial Neural Networks (ANN) with Self-Organizing Maps (SOM), demonstrating the hybrid model's superior performance in capturing complex customer behavior patterns. The third paper provides a comprehensive analysis of various machine learning techniques, including decision trees, random forests, SVM, and neural networks, emphasizing the importance of feature selection and data preprocessing. This comparative study reveals that neural networks, especially when used in ensemble configurations or hybrid models, offer significant improvements in churn prediction accuracy. The findings highlight the potential of advanced neural network-based approaches to enhance predictive performance and provide valuable insights for developing more effective customer retention strategies.
+    \end{flushleft}
+    
+    \clearpage
+    \tableofcontents
+    \clearpage
+    \listoftables
+    \clearpage
+    \listoffigures
+    \modsection
+    \modsubsection
+    \addtocontents{toc}{\protect\hfill \textbf{PAGE}\\}
+    \addtocontents{toc}{
+        \begin{flushleft}
+            \protect\hspace{0.5in} Churn Prediction \hspace{10.35cm} i\\
+            \protect\hspace{0.5in} Acknowledgement \hspace{10cm} ii\\
+            \protect\hspace{0.5in} Abstract \hspace{11.7cm} iii\\
+            \protect\hspace{0.5in} Contents \hspace{11.6cm} iv\\
+            \protect\hspace{0.5in} List of Tables \hspace{10.85cm} v\\
+            \protect\hspace{0.5in} List of Figures \hspace{10.6cm} vi
+        \end{flushleft}
+    }
+    
+    \addtocontents{lot}{\textbf{Table No.} \hspace*{4.5cm} \textbf{Description} \hfill \textbf{Page}}
+    \addtocontents{lof}{\textbf{Figure No.} \hspace*{4.5cm} \textbf{Description} \hfill \textbf{Page}}
+    \end{center}
+\end{titlepage}

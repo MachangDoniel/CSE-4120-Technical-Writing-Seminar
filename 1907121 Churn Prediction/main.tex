@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{times} % Times New Roman font
+\usepackage[T1]{fontenc} % Font encoding
+\usepackage{graphicx}
+\usepackage[a4paper, top=1.2in, bottom=1in, left=1.2in, right=1in]{geometry}
+\usepackage{txfonts} % or use: \usepackage{newtxtext}
+\usepackage{setspace} % Load the setspace package
+\onehalfspacing % Set line spacing to 1.5
+\usepackage[absolute,overlay]{textpos}
+\usepackage{tikz}
+\usepackage{titletoc}
+\usepackage{tocloft}
+\usepackage{array} % Needed for custom column width
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % Custom column type for centered content
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{svg}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{subfig}
+\usepackage{subcaption}
+
+% \usepackage{multirow}
+\usepackage{longtable}
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=30mm, % Inner margin
+	outer=25mm, % Outer margin
+%	bindingoffset=.5cm, % Binding offset
+	top=30mm, % Top margin 30
+	bottom=25mm, % Bottom margin
+%	showframe, % Uncomment to show how the type block is set on the page
+}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+\usepackage{setspace}
+\setstretch{1.5}
+
+\captionsetup[table]{font=normal,justification=centering,font={normal},skip=12pt}
+% \begin{textblock*}{\paperwidth}(1.2in, .5in) % Adjust the vertical position and text as needed
+%     {\fontsize{12}{1.5}\selectfont Project/Thesis No. :}
+% \end{textblock*}
+\renewcommand{\cftdot}{}
+\setcounter{tocdepth}{2}
+
+
+  
+\newcommand{\modsection}{%
+  \titlecontents{section}% <section-type>
+    []% <left> Adjust this value to set the indentation
+    \bfseries
+    {\contentslabel[\thecontentslabel]{1.5em}{}}% <numbered-entry-format>
+    {}% <numberless-entry-format> Remove the numbers
+    {\titlerule*[1pc]{}\contentspage\hspace*{1em}}% <filler-page-format>
+    \bfseries
+}
+
+% Define a command to add bullet points
+\newcommand{\modsubsection}{%
+  \titlecontents{subsection}% <section-type>
+    [1in]% <left> Adjust this value to set the indentation
+    {}% <above-code>
+    {\contentslabel[\thecontentslabel \hspace{1em}]{1.5em}{\hspace{1em}}}% <numbered-entry-format>
+    {}% <numberless-entry-format> Remove the numbers
+    {\titlerule*[1pc]{}\contentspage\hspace*{1em}}% <filler-page-format>
+}
+
+
+\begin{document}
+
+\include{Title Page}
+
+\pagenumbering{arabic} % Set page numbering to Arabic numerals
+\setcounter{page}{1}
+
+\include{Introduction}
+\include{Literature Review}
+\include{Methodology}
+\include{Implementation, Results and Discussions}
+\include{Finding and Recommendations}
+\include{Addressing Course outcomes and program outcomes}
+\include{Addressing Complex Engineering Problems and Activities}
+\include{Conclusions}
+
+\addcontentsline{toc}{section}{\newline References} % Add to ToC
+
+\renewcommand\bibname{References}
+\bibliographystyle{unsrt}   
+\bibliography{references}
+
+\phantom {
+\cite{8667113}
+\cite{TSAI200912547}
+\cite{Agarwal2022-cq}
+\cite{Jesan2003}
+\cite{Agrawal2018}
+\cite{8538420}
+\cite{Ahmad2019}
+}
+
+\include{Publication Details}
+\end{document}

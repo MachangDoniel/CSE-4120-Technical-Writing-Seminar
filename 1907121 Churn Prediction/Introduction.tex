@@ -1,0 +1,46 @@
+\section*{}
+\begin{center}
+    {\fontsize{14}{1.5}\selectfont \textbf{CHAPTER I}}\\
+    \vspace{12pt}
+    {\fontsize{16}{1.5}\selectfont \textbf{Introduction}}\\
+    \vspace{12pt}
+\end{center}
+
+\setcounter{section}{1}
+\setcounter{subsection}{0}
+\addcontentsline{toc}{section}{\textbf{CHAPTER I Introduction}} % Add to ToC
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\setcounter{equation}{0}
+\setlength{\parindent}{0pt}
+
+
+\subsection{Introduction} {
+Customer churn, the phenomenon where customers discontinue their subscription or stop using a service, is a significant issue for businesses, particularly in the telecom industry. With fierce competition and increasing options for customers, retaining existing clients has become crucial. Statistics indicate that acquiring a new customer can be five to seven times more expensive than retaining an existing one \cite{8667113}
+. Thus, effectively predicting customer churn can result in substantial cost savings and increased profitability for companies.
+
+Traditional methods for predicting customer churn have included statistical techniques and basic machine learning models. While these methods have provided some insights, they often fall short in capturing the complex and non-linear relationships present in customer behavior data \cite{TSAI200912547}. As a result, these models typically offer limited accuracy and fail to generalize well to unseen data.
+
+Neural networks have emerged as a powerful tool in this context due to their ability to model complex, non-linear relationships within data \cite{8667113}. By mimicking the human brain's neural connections, these models can learn intricate patterns and dependencies \cite{Jesan2003}. However, even neural networks are not without their challenges \cite{Agrawal2018}. Individual neural network models can suffer from overfitting, where the model learns the training data too well, including its noise and outliers, leading to poor performance on new, unseen data\cite{8538420}.
+
+Ensemble methods are introduced combining multiple models to create a robust predictive system that benefits from the strengths of each component model while minimizing their weaknesses\cite{8667113}. Techniques such as bagging, boosting, and majority voting are commonly used to aggregate the predictions of individual models, resulting in improved accuracy and stability. On the other hand, hybrid models integrate different neural network techniques or combine neural networks with other machine learning algorithms to enhance predictive performance further\cite{TSAI200912547}.
+
+% This report focuses on evaluating and comparing three research papers that utilize neural network-based models for customer churn prediction. The first paper examines individual and ensemble neural network classifiers, highlighting the benefits of ensemble methods like Bagging, AdaBoost, and Majority Voting. The second paper explores a hybrid approach, combining Artificial Neural Networks (ANN) with Self-Organizing Maps (SOM) to improve prediction accuracy. The third paper provides a comprehensive overview of various machine learning techniques, including neural networks and their ensembles, emphasizing the importance of feature selection and preprocessing in model performance.
+
+% By analyzing these studies, this report aims to identify the most effective methodologies and practices for churn prediction in the telecom industry. The goal is to provide a comprehensive understanding of how neural network-based models can be optimized and applied to real-world data, ultimately aiding businesses in their efforts to retain customers and reduce churn rates. Through this comparative analysis, the report seeks to contribute to the ongoing research in customer churn prediction, offering valuable insights for both academics and practitioners in the field.
+
+}
+
+\subsection{Problem Statement} {
+In the highly competitive telecom industry, retaining existing customers is more cost-effective than acquiring new ones. Customer churn, defined as the loss of clients or subscribers, poses a significant challenge to telecom companies. The ability to accurately predict customer churn can enable businesses to proactively address the factors leading to customer dissatisfaction and take corrective measures to improve customer retention\cite{Agarwal2022-cq}.
+
+Traditional methods for churn prediction often fail to capture the complex, non-linear relationships inherent in customer behavior data\cite{Ahmad2019}. This inadequacy necessitates the exploration of more sophisticated techniques that can provide higher accuracy and reliability. Neural networks, with their capability to model complex patterns, have emerged as a promising solution for churn prediction\cite{Agrawal2018}. However, individual neural network models may still struggle with overfitting and generalization issues\cite{8667113}.
+
+To solve these limitations, recent research has focused on enhancing neural network models through ensemble methods and hybrid approaches\cite{8667113}. Ensemble methods combine multiple models to improve predictive performance by reducing variance and bias. Hybrid models integrate different neural network techniques to leverage their strengths and compensate for their weaknesses\cite{TSAI200912547}.
+
+% Despite the advancements, there remains a need for a comprehensive evaluation of these approaches to determine their effectiveness in real-world applications. This report aims to analyze and compare three studies on customer churn prediction using neural network-based models, focusing on individual neural networks, hybrid neural networks, and machine learning ensembles. The goal is to identify the best practices and methodologies that can lead to more accurate and reliable churn prediction models, ultimately aiding telecom companies in retaining their customers more effectively.
+}
+
